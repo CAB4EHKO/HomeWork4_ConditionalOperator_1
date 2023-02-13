@@ -74,7 +74,7 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача6.");
-        int totalPeople = 60;
+        int totalPeople = 61;
         boolean thereAreSeating = totalPeople <= 59;
         boolean thereAreStanding = totalPeople >= 60 && totalPeople <= 101;
         if (thereAreSeating) {

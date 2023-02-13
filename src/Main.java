@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1() {
@@ -26,14 +27,28 @@ public class Main {
             System.out.println("На улице " + temp + " градусов, можно идти без шапки.");
         }
     }
+
     public static void task3() {
         System.out.println("Задача 3.");
         int speed = 60;
         if (speed > 60) {
             System.out.println("Если скорость " + speed + " , то придётся заплатить штраф.");
-        }
-        else {
+        } else {
             System.out.println("Если скорость " + speed + ", то можно ездить споконойно.");
+        }
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        int age = 23;
+        if (age > 1 && age <= 6) {
+            System.out.println("Если возраст человек равен: " + age + ", то ему нужно ходить в детский сад.");
+        } else if (age > 6 && age <= 18) {
+            System.out.println("Если возраст человек равен: " + age + ", то ему нужно ходить в школу.");
+        } else if (age > 18 && age < 24) {
+            System.out.println("Если возраст человек равен: " + age + ", то ему нужно ходить в университет.");
+        } else if (age > 24) {
+            System.out.println("Если возраст человек равен: " + age + ", то ему нужно ходить на работу.");
         }
     }
 }

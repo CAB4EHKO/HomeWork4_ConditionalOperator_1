@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1() {
@@ -68,6 +69,20 @@ public class Main {
             System.out.println("Если возраст ребёнка равен: " + age +
                     ", то ему можно кататься на атракционе без сопровождения взрослого.");
 
+        }
+    }
+
+    public static void task6() {
+        System.out.println("Задача6.");
+        int totalPeople = 60;
+        boolean thereAreSeating = totalPeople <= 59;
+        boolean thereAreStanding = totalPeople >= 60 && totalPeople <= 101;
+        if (thereAreSeating) {
+            System.out.println("В поезде есть сидячие места.");
+        } else if (thereAreStanding) {
+            System.out.println("В поезде есть стоячие места.");
+        } else {
+            System.out.println("В поезде нет мест.");
         }
     }
 }
